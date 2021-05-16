@@ -1,0 +1,129 @@
+// Core variables and mixins
+@import "variables.scss";
+@import "mixins.scss";
+// Global CSS
+@import "global.scss";
+// Components
+@import "navbar.scss";
+@import "masthead.scss";
+@import "bootstrap-overrides.scss";
+$form-select-bg-position: calc(100em + .1875rem) center!important;
+
+.logo{
+    max-width: 100px;
+    border-radius: 13px;
+}
+
+.nav-link{
+    border: 1px solid rgba(36, 17, 32, 0.691);
+    border-radius: 10px  ;
+    margin: 0.2em;
+
+}
+
+.nav-link:hover {
+    background: #201c1e9d ;
+    box-shadow: 3px #1b0f1580;
+    border: 1px solid rgb(36, 17, 32);
+    border-radius: 10px  ;
+}
+.navbar-collapse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .btn-outline-light{
+        width: 132px;
+    }
+}
+.rounded-circle{
+    box-shadow: 0px 30px 60px rgba(53, 11, 11, 0.609);
+}
+
+.text{
+    margin-top:  5px;
+    margin-left: 5px;
+    color:       brown;
+    font-size:   12px;
+    padding:     0;
+}
+
+.hide{
+    display: none;
+}
+.noHide{
+    display: block  ;
+}
+
+
+
+.custome{
+    max-height:30px;
+    overflow:visible;
+    background-color: rgba(0, 0, 0, 0);
+    .textos{
+        max-height:30px;
+        min-width: 180px;
+        overflow:visible;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    ul{
+        overflow:visible; 
+        
+        min-width: 180px;
+        z-index: 1100!important;
+        background-color: rgba(0, 0, 0, 0.479);
+        list-style: none;
+        animation: fadeIn 0.5s;
+    a{
+        color:rgb(153, 99, 144)
+    }
+    }
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+}
+
+body {
+    background: #fce97f80;
+    animation: fadebackground 6s linear infinite;
+    }
+    @keyframes fadebackground {
+    from {background-color: #ef116d8c;}
+    to {background-color: #ff03f28a;}
+    }
+#formulario{
+background-color: rgba(235, 225, 225, 0.479);
+padding-left: 1em;
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(251, 251, 251);
+    opacity: 1; /* Firefox */
+    }
+
+}
+.find{
+    a:link {
+    text-decoration: none;
+    }
+    
+    a:visited {
+    text-decoration: none;
+    }
+    
+    a:hover {
+    text-decoration: underline;
+    }
+    
+    a:active {
+    text-decoration: underline;
+    }
+}
